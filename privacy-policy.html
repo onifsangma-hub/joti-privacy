@@ -1,0 +1,602 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Privacy Policy for Joti AI Translator — real-time English, Spanish, and Bengali voice translation app." />
+  <title>Privacy Policy — Joti AI Translator</title>
+  <style>
+    :root {
+      --bg:       #ffffff;
+      --surface:  #f7f8fa;
+      --border:   #e4e7ec;
+      --text:     #111827;
+      --muted:    #6b7280;
+      --accent:   #0d9488;
+      --accent-bg:#f0fdf9;
+      --tag-bg:   #ecfdf5;
+      --tag-text: #065f46;
+    }
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+                   "Helvetica Neue", Arial, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.65;
+      font-size: 16px;
+    }
+
+    /* ── Header ── */
+    .header {
+      background: linear-gradient(135deg, #070b13 0%, #0b1020 60%, #0f172a 100%);
+      color: #fff;
+      padding: 40px 24px 36px;
+      text-align: center;
+    }
+    .header .app-name {
+      font-size: 13px;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 1.8px;
+      color: #14b8a6;
+      margin-bottom: 10px;
+    }
+    .header h1 {
+      font-size: clamp(24px, 5vw, 36px);
+      font-weight: 800;
+      line-height: 1.2;
+      margin-bottom: 12px;
+    }
+    .header .meta {
+      font-size: 13px;
+      color: rgba(255,255,255,0.55);
+      margin-bottom: 20px;
+    }
+    .badges { display: flex; flex-wrap: wrap; gap: 8px; justify-content: center; }
+    .badge {
+      background: rgba(20,184,166,0.18);
+      color: #5eead4;
+      border: 1px solid rgba(20,184,166,0.30);
+      border-radius: 20px;
+      padding: 4px 14px;
+      font-size: 12px;
+      font-weight: 700;
+    }
+
+    /* ── Main content ── */
+    .container {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 40px 24px 80px;
+    }
+
+    /* ── TOC ── */
+    .toc {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 10px;
+      padding: 24px;
+      margin-bottom: 36px;
+    }
+    .toc h2 {
+      font-size: 13px;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 1.2px;
+      color: var(--muted);
+      margin-bottom: 12px;
+      border: none;
+    }
+    .toc ol { padding-left: 20px; }
+    .toc li { margin-bottom: 6px; }
+    .toc a { color: var(--accent); text-decoration: none; font-size: 14px; font-weight: 500; }
+    .toc a:hover { text-decoration: underline; }
+
+    /* ── Sections ── */
+    h2 {
+      font-size: 20px;
+      font-weight: 800;
+      margin-top: 44px;
+      margin-bottom: 14px;
+      padding-bottom: 8px;
+      border-bottom: 2px solid var(--border);
+      scroll-margin-top: 20px;
+    }
+    h3 {
+      font-size: 16px;
+      font-weight: 700;
+      margin-top: 24px;
+      margin-bottom: 10px;
+      color: var(--accent);
+    }
+    p { margin-bottom: 14px; }
+    ul, ol { padding-left: 22px; margin-bottom: 14px; }
+    li { margin-bottom: 6px; }
+    strong { font-weight: 700; }
+
+    /* ── Table ── */
+    .table-wrap { overflow-x: auto; margin: 16px 0 20px; }
+    table { border-collapse: collapse; width: 100%; min-width: 460px; }
+    th {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      padding: 10px 14px;
+      text-align: left;
+      font-size: 13px;
+      font-weight: 700;
+      color: var(--muted);
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+    }
+    td {
+      border: 1px solid var(--border);
+      padding: 10px 14px;
+      font-size: 14px;
+      vertical-align: top;
+    }
+    tr:hover td { background: var(--surface); }
+
+    /* ── Callout boxes ── */
+    .callout {
+      border-left: 4px solid var(--accent);
+      background: var(--accent-bg);
+      border-radius: 0 8px 8px 0;
+      padding: 14px 18px;
+      margin: 16px 0;
+      font-size: 14px;
+    }
+    .callout.warning {
+      border-color: #f59e0b;
+      background: #fffbeb;
+    }
+    .callout strong { display: block; margin-bottom: 4px; }
+
+    /* ── Not-collected list ── */
+    .no-collect { columns: 2; column-gap: 24px; }
+    @media (max-width: 520px) { .no-collect { columns: 1; } }
+    .no-collect li::marker { content: "✕  "; color: #ef4444; }
+
+    /* ── Footer ── */
+    footer {
+      background: var(--surface);
+      border-top: 1px solid var(--border);
+      text-align: center;
+      padding: 32px 24px;
+      font-size: 13px;
+      color: var(--muted);
+    }
+    footer a { color: var(--accent); text-decoration: none; }
+    footer a:hover { text-decoration: underline; }
+    .footer-app { font-weight: 700; color: var(--text); font-size: 15px;
+                  margin-bottom: 6px; }
+
+    @media (max-width: 600px) {
+      .header { padding: 28px 16px 24px; }
+      .container { padding: 28px 16px 60px; }
+    }
+  </style>
+</head>
+<body>
+
+<!-- ────────────────── HEADER ────────────────── -->
+<div class="header">
+  <div class="app-name">Joti AI Translator</div>
+  <h1>Privacy Policy</h1>
+  <p class="meta">Version 2.0 &nbsp;·&nbsp; Effective: June 2, 2026 &nbsp;·&nbsp; Last Updated: June 2, 2026</p>
+  <div class="badges">
+    <span class="badge">✓ No account required</span>
+    <span class="badge">✓ No analytics</span>
+    <span class="badge">✓ No advertising</span>
+    <span class="badge">✓ No crash reporting</span>
+    <span class="badge">✓ Local storage only</span>
+    <span class="badge">✓ One-tap data deletion</span>
+  </div>
+</div>
+
+<!-- ────────────────── CONTENT ────────────────── -->
+<div class="container">
+
+  <!-- TOC -->
+  <nav class="toc">
+    <h2>Contents</h2>
+    <ol>
+      <li><a href="#who">Who This App Is For</a></li>
+      <li><a href="#what-it-does">What This App Does</a></li>
+      <li><a href="#data-stored">Data Stored on Your Device</a></li>
+      <li><a href="#third-parties">Data Shared With Third Parties</a></li>
+      <li><a href="#microphone">Microphone Access</a></li>
+      <li><a href="#audio-modes">Speaker Mode and Earphone Mode</a></li>
+      <li><a href="#offline">Offline Features</a></li>
+      <li><a href="#analytics">Analytics and Advertising</a></li>
+      <li><a href="#security">Data Security</a></li>
+      <li><a href="#rights">Your Rights and Choices</a></li>
+      <li><a href="#children">Children's Privacy</a></li>
+      <li><a href="#changes">Changes to This Policy</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ol>
+  </nav>
+
+  <!-- 1 -->
+  <h2 id="who">1. Who This App Is For</h2>
+  <p>
+    Joti AI Translator is a real-time voice translation app for <strong>adults (18 years and
+    older)</strong> working in professional settings including nail salons, restaurants,
+    hotels, retail stores, taxi services, and medical reception desks.
+  </p>
+  <p>
+    This App is <strong>not directed at children under the age of 13</strong>. We do not
+    knowingly collect any information from children. If you are a parent and believe your
+    child used this App, please contact us using the details in Section 13.
+  </p>
+
+  <!-- 2 -->
+  <h2 id="what-it-does">2. What This App Does</h2>
+  <p>
+    Joti AI Translator listens to spoken words through your device microphone, converts
+    speech to text using your device's built-in speech recognition, sends that text to
+    the Google Cloud Translation API to produce a translated text, and plays the
+    translation aloud through your device speaker or connected earphones.
+  </p>
+  <p>
+    The App supports <strong>English, Spanish, and Bengali</strong> and can translate
+    automatically between all three languages.
+  </p>
+
+  <!-- 3 -->
+  <h2 id="data-stored">3. Data Stored on Your Device</h2>
+
+  <div class="callout">
+    <strong>On-device only</strong>
+    All data listed below is stored in your device's private app storage.
+    It never leaves your device except as described in Section 4.
+    No server, cloud service, or third party can access this data.
+  </div>
+
+  <div class="table-wrap">
+    <table>
+      <thead>
+        <tr>
+          <th>Data Item</th>
+          <th>What It Contains</th>
+          <th>Why We Store It</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Conversation phrases</td>
+          <td>Words you spoke, converted to text by your device</td>
+          <td>Learning and replay features</td>
+        </tr>
+        <tr>
+          <td>Translation results</td>
+          <td>The translated text for each phrase</td>
+          <td>Learning and replay features</td>
+        </tr>
+        <tr>
+          <td>Phrase timestamps</td>
+          <td>Date and time each phrase was used</td>
+          <td>History and frequency display</td>
+        </tr>
+        <tr>
+          <td>Heard count</td>
+          <td>How many times each phrase was spoken</td>
+          <td>Frequently used phrase ranking</td>
+        </tr>
+        <tr>
+          <td>Favorites flag</td>
+          <td>Whether you starred a phrase</td>
+          <td>Favorite phrase pack</td>
+        </tr>
+        <tr>
+          <td>Phrase category</td>
+          <td>Your chosen label (e.g. Nail Salon, Medical)</td>
+          <td>Phrase organization</td>
+        </tr>
+        <tr>
+          <td>Language pair</td>
+          <td>Source and target language for each phrase</td>
+          <td>Translation history display</td>
+        </tr>
+        <tr>
+          <td>App settings</td>
+          <td>Speed, volume, output mode, language preferences</td>
+          <td>Restoring your preferences</td>
+        </tr>
+        <tr>
+          <td>Salon checklist</td>
+          <td>Which test items you completed</td>
+          <td>In-app testing tool</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <p><strong>Storage limit:</strong> The App keeps at most 20 recent phrases on your device.
+  Older phrases are automatically removed as new ones are added.</p>
+
+  <h3>Data We Do NOT Collect</h3>
+  <ul class="no-collect">
+    <li>Your name</li>
+    <li>Your email address</li>
+    <li>Your phone number</li>
+    <li>Your physical address</li>
+    <li>GPS or location data</li>
+    <li>Device identifiers</li>
+    <li>Advertising IDs</li>
+    <li>Audio recordings</li>
+    <li>Photos or videos</li>
+    <li>Contacts</li>
+    <li>Financial information</li>
+    <li>Health information</li>
+    <li>Biometric data</li>
+    <li>Browsing history</li>
+    <li>IP addresses</li>
+    <li>Usage analytics</li>
+    <li>Crash reports</li>
+    <li>Diagnostic logs</li>
+  </ul>
+
+  <!-- 4 -->
+  <h2 id="third-parties">4. Data Shared With Third Parties</h2>
+
+  <div class="callout">
+    <strong>One type of data. One third party. One purpose.</strong>
+    Transcribed text is sent to Google Cloud Translation API to generate translations.
+    Nothing else is shared with anyone.
+  </div>
+
+  <h3>Google Cloud Translation API</h3>
+  <p>
+    When you speak a phrase, your device's speech recognition converts your voice to text.
+    That text is then sent to Google's Cloud Translation API to produce the translated text.
+  </p>
+
+  <div class="table-wrap">
+    <table>
+      <thead>
+        <tr><th>Property</th><th>Detail</th></tr>
+      </thead>
+      <tbody>
+        <tr><td>What is sent</td><td>Transcribed text (words you spoke, as a plain string)</td></tr>
+        <tr><td>What is NOT sent</td><td>Audio, device ID, name, location, or any personal data</td></tr>
+        <tr><td>Destination</td><td>translation.googleapis.com (Google LLC)</td></tr>
+        <tr><td>Transport</td><td>HTTPS — encrypted in transit</td></tr>
+        <tr><td>Retention</td><td>Google processes requests transiently and does not retain query text for model training by default (see Google Cloud Data Processing Addendum)</td></tr>
+        <tr><td>Purpose</td><td>Translation only — required for core app functionality</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <p>
+    No other third party receives any data from this App. There is no advertising network,
+    analytics provider, social media SDK, data broker, or crash-reporting service connected
+    to this App.
+  </p>
+  <p>
+    For Google's privacy practices regarding Cloud Translation:
+    <a href="https://cloud.google.com/terms/cloud-privacy-notice" target="_blank"
+       rel="noopener">cloud.google.com/terms/cloud-privacy-notice</a>
+  </p>
+
+  <!-- 5 -->
+  <h2 id="microphone">5. Microphone Access</h2>
+  <p>
+    The App requests access to your device microphone to capture your speech for translation.
+    Microphone access is used <strong>only while the App is open</strong> and one of the
+    following is true:
+  </p>
+  <ul>
+    <li>You have tapped the microphone button, <strong>or</strong></li>
+    <li>Auto Work Mode or Real Salon Work Mode is enabled and Break Mode is off.</li>
+  </ul>
+  <p>
+    <strong>How audio is processed:</strong> Your device's operating system (Android or iOS)
+    handles microphone audio internally. Audio is converted to text by your device's built-in
+    speech recognition engine. The App receives <em>only the converted text</em> — not audio
+    samples, audio files, or any audio data. The App never records, saves, or transmits audio.
+  </p>
+  <p>
+    <strong>Break Mode:</strong> Enabling Break Mode immediately stops all microphone activity,
+    cancels any active speech recognition session, and halts TTS playback. While Break Mode
+    is on, no speech is captured or processed.
+  </p>
+  <p>
+    <strong>Revoking permission:</strong> You can revoke microphone access at any time in
+    your device's Settings → Apps → Joti AI Translator → Permissions → Microphone. The App
+    will display a guidance message and will not access the microphone while permission is
+    denied.
+  </p>
+  <p>
+    <strong>Note on Android speech recognition:</strong> Android's default speech recognizer
+    may send audio to Google's servers as part of the operating system's speech recognition
+    service. This behavior is controlled by the Android OS and your device settings — not
+    by this App. You can enable on-device-only speech recognition in your Android settings
+    if your device supports it.
+  </p>
+
+  <!-- 6 -->
+  <h2 id="audio-modes">6. Speaker Mode and Earphone Mode</h2>
+  <p>
+    Speaker Mode and Earphone Mode are <strong>in-app settings that control audio playback</strong>.
+    They adjust pitch, speed, and audio routing to your phone speaker, wired earphones, or
+    Bluetooth earbuds (AirPods, Galaxy Buds, or other Bluetooth headsets).
+  </p>
+  <p>
+    These settings:
+  </p>
+  <ul>
+    <li>Do not transmit any data to any server</li>
+    <li>Do not connect to any external service</li>
+    <li>Are stored on your device as local preferences</li>
+    <li>Use your device's standard audio system for Bluetooth routing</li>
+  </ul>
+
+  <!-- 7 -->
+  <h2 id="offline">7. Offline Features</h2>
+  <p>The following features work entirely without an internet connection:</p>
+  <div class="table-wrap">
+    <table>
+      <thead>
+        <tr><th>Feature</th><th>Works Offline?</th><th>How</th></tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Emergency Phrases (Help, Police, Ambulance, Translator, Medical)</td>
+          <td>✓ Yes</td>
+          <td>All text stored in app code — no network call made</td>
+        </tr>
+        <tr>
+          <td>Offline Phrase Pack (Greetings, Payment, Wait, Salon)</td>
+          <td>✓ Yes</td>
+          <td>All text stored in app code — no network call made</td>
+        </tr>
+        <tr>
+          <td>Speech playback (TTS)</td>
+          <td>✓ Yes</td>
+          <td>Uses device's built-in text-to-speech engine</td>
+        </tr>
+        <tr>
+          <td>Viewing saved phrase history</td>
+          <td>✓ Yes</td>
+          <td>Reads from device local storage</td>
+        </tr>
+        <tr>
+          <td>Translating new spoken phrases</td>
+          <td>✗ No</td>
+          <td>Requires Google Cloud Translation API — internet needed</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <!-- 8 -->
+  <h2 id="analytics">8. Analytics and Advertising</h2>
+  <p>
+    <strong>Analytics:</strong> This App collects no analytics data whatsoever. No usage
+    events, screen views, session durations, button taps, or performance metrics are sent
+    anywhere. There is no analytics SDK installed in the App.
+  </p>
+  <p>
+    <strong>Advertising:</strong> This App displays no advertisements. There is no
+    advertising SDK installed. No advertising identifier is accessed or shared.
+  </p>
+  <p>
+    <strong>Crash reporting:</strong> This App does not use crash reporting software. No
+    crash logs, error traces, or diagnostic data are sent to any server. Errors are shown
+    only as local status messages within the App.
+  </p>
+
+  <!-- 9 -->
+  <h2 id="security">9. Data Security</h2>
+  <p>
+    Data stored on your device is protected by Android's application sandboxing. No other
+    app on your device can access the data stored by Joti AI Translator.
+  </p>
+  <p>
+    All data sent to Google Cloud Translation is transmitted over HTTPS using standard TLS
+    encryption. No unencrypted connections are used.
+  </p>
+  <p>
+    The App does not implement user authentication because no user account is required.
+    There is no password, login, or personal profile.
+  </p>
+
+  <!-- 10 -->
+  <h2 id="rights">10. Your Rights and Choices</h2>
+
+  <h3>Delete all stored data</h3>
+  <p>
+    Open the App → scroll to the Privacy section → tap <strong>Clear History</strong>.
+    This immediately and permanently removes all conversation phrases, translations,
+    timestamps, favorites, categories, and learning counters stored on your device.
+    This action cannot be undone.
+  </p>
+
+  <h3>Revoke microphone access</h3>
+  <p>
+    Go to your device Settings → Apps → Joti AI Translator → Permissions → Microphone →
+    select Deny. The App will stop capturing speech and display a guidance message.
+  </p>
+
+  <h3>Uninstall the App</h3>
+  <p>
+    Uninstalling the App from your device permanently removes all locally stored data.
+  </p>
+
+  <h3>Translation data</h3>
+  <p>
+    We do not retain your translation text after the translation response is received.
+    We have no mechanism to retrieve specific translation requests made to Google Cloud
+    because we do not log them and they are processed transiently. For requests related to
+    Google's processing of your data, visit Google's privacy controls at
+    <a href="https://myaccount.google.com/data-and-privacy" target="_blank" rel="noopener">
+    myaccount.google.com/data-and-privacy</a>.
+  </p>
+
+  <!-- 11 -->
+  <h2 id="children">11. Children's Privacy</h2>
+  <p>
+    This App is not designed for or directed at children under the age of 13. We do not
+    knowingly collect personal information from children. If you are a parent or guardian
+    and believe your child has used this App in a way that resulted in personal information
+    being collected, please contact us at the address in Section 13 and we will take
+    appropriate steps.
+  </p>
+
+  <!-- 12 -->
+  <h2 id="changes">12. Changes to This Policy</h2>
+  <p>
+    We may update this Privacy Policy from time to time. The version number and date at
+    the top of this page will reflect the most recent update. We encourage you to review
+    this policy periodically. Continued use of the App after a policy update constitutes
+    your acceptance of the updated terms.
+  </p>
+  <p>
+    Material changes (changes that affect what data is collected, how it is used, or who
+    it is shared with) will increase the version number. Minor clarifications will be noted
+    in the Last Updated date only.
+  </p>
+
+  <!-- 13 -->
+  <h2 id="contact">13. Contact</h2>
+  <p>
+    If you have any questions about this Privacy Policy, how your data is handled, or
+    to submit a data deletion request, please contact:
+  </p>
+
+  <div class="callout">
+    <strong>Joti AI Translator — Privacy Contact</strong>
+    <strong>Developer:</strong> [Your Full Name or Business Name]<br />
+    <strong>Email:</strong> <a href="mailto:your-email@example.com">your-email@example.com</a><br />
+    <strong>Location:</strong> [City, State, Country]<br />
+    <strong>Response time:</strong> Within 5 business days
+  </div>
+
+  <hr style="border:none;border-top:1px solid var(--border);margin:36px 0;" />
+
+  <p style="font-size:13px;color:var(--muted);">
+    <strong>Open-source acknowledgment:</strong> This App is built with Flutter (Google LLC,
+    BSD 3-Clause). It uses the following open-source packages:
+    flutter_tts (MIT), speech_to_text (BSD 3-Clause), shared_preferences (BSD 3-Clause),
+    http (BSD 3-Clause), cupertino_icons (MIT).
+    Full license texts are bundled within the Flutter framework and available via
+    the Android app's license registry.
+  </p>
+
+</div><!-- /.container -->
+
+<!-- ────────────────── FOOTER ────────────────── -->
+<footer>
+  <div class="footer-app">Joti AI Translator</div>
+  <p>Privacy Policy · Version 2.0 · Effective June 2, 2026</p>
+  <p style="margin-top:8px;">
+    <a href="#who">Back to top</a>
+    &nbsp;·&nbsp;
+    <a href="mailto:your-email@example.com">Contact</a>
+  </p>
+</footer>
+
+</body>
+</html>
